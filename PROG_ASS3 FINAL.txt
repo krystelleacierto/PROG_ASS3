@@ -4,11 +4,12 @@ using namespace std;
 int main()
 {
 	float km,php,pay,change;
-	cout<<"TAXI METER CALCULATOR"<<endl;
+	cout<<"                    TAXI METER CALCULATOR"<<endl<<endl;
+	cout<<"PAYMENT: 50 PHP PER 5 KM"<<endl;
+	cout<<"NOTE: 50 PHP CHARGE PER ADDITIONAL 5 KM."<<endl<<endl;
 	cout<<"ENTER NUMBER OF KILOMETER:"<<endl;
 	cin>>km;
-	
-	if (km<0)
+	if (km>0)
 	{
 	km=-1*km;
 	}
@@ -18,19 +19,18 @@ int main()
 	if ((km>=0)&&(km<=5))
 	{
 		php=50;
-		
+	
 	}
 
 	else 
 	{ 
 	km = km-5;
-	  php=50+(0.3*km);
+	  php=50+(0.3*km); 
 	}
-	
-	cout<<"50 PHP CHARGE PER ADDITTIONAL 5 KM."<<endl;
+		
 	cout<<"ENTER PAYMENT"<<endl;
 	cin>>pay;
-	
+	cout<<" "<<endl;
 	
 	change=pay-php;
 	
