@@ -26,6 +26,7 @@ int main()
 	  php=50+(0.3*km);
 	}
 	
+	cout<<"50 PHP CHARGE PER ADDITTIONAL 5 KM."<<endl;
 	cout<<"ENTER PAYMENT"<<endl;
 	cin>>pay;
 	
